@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #385C98 !important;
+  color: white;
+
+}
+
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  color: black;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.card {
+  margin: 20px auto 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  font-size: 12px;
+}
+
+.card-header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.time {
+  text-align: right;
+  width: 100%;
+  color: #ccc;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.likes {
+  font-weight: bold;
+}
+
+.hashtag {
+  color: #4a5279;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.card-actions {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.action-icons {
+  font-size: 16px;
+  color: #000000;
+}
+
+.comments-input {
+  margin-left: 10px;
+  border: none;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #postsGrid {
+    display: block !important;
+  }
+
+  #HeaderButtons {
+    display: block !important;
+  }
+
+  #header {
+    display: inline !important;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
