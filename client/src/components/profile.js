@@ -52,18 +52,17 @@ class profile extends React.Component {
             gridGap: "1em",
           }}
         >
-          {console.log(profile.posts) ||
-            (profile &&
-              profile.posts.map((post, i) => (
-                <ProfilePosts
-                  key={i}
-                  filePath={post.filePath}
-                  email={profile.email}
-                  username={profile.username}
-                  caption={post.caption}
-                  created_at={post.created_at}
-                />
-              )))}
+          {profile &&
+            profile.posts.map((post, i) => (
+              <ProfilePosts
+                key={i}
+                filePath={post.filePath}
+                email={profile.email}
+                username={profile.username}
+                caption={post.caption}
+                created_at={post.created_at}
+              />
+            ))}
 
           {/* <pre
             style={{ textAlign: "left", padding: 32, backgroundColor: "white" }}
