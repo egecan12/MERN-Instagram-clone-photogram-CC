@@ -113,9 +113,9 @@ app.post("/saveSetting", authCheck, (req, res) => {
         },
       },
     };
-    Users.update(myquery, newvalues, function (err, res) {
+    User.update(myquery, newvalues, function (err, res) {
       if (err) throw err;
-      res.send("User updated");
+      // res.send("User updated");
     });
   });
 });
